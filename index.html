@@ -15,6 +15,7 @@
         body {
             background-color: #333;
             color: whitesmoke;
+            background: linear-gradient(rgb(34, 40, 49) 0%, rgb(57, 62, 70) 35%, rgb(0, 173, 181) 66%, rgb(238, 238, 238) 100%); 
         }
         .pp {
             border-radius: 50%;
@@ -28,8 +29,34 @@
             background-repeat: no-repeat;
             background-position: center center; /* Center the image horizontally and vertically */
         }
+        .pendidikan-figure {
+            float: left;
+            width: 50%; /* Distribute equally among the four columns */
+            margin: 0 auto; /* Center the figure horizontally within the column */
+            text-align: center; /* Center the content (image and text) inside the figure */
+        }
+        .achievments-figure {
+            float: left;
+            width: 33%; /* Distribute equally among the four columns */
+            margin: 0 auto; /* Center the figure horizontally within the column */
+            text-align: center; /* Center the content (image and text) inside the figure */
+        }
+        .toolset-figure {
+            float: left;
+            width: 25%; /* Distribute equally among the four columns */
+            margin: 0 auto; /* Center the figure horizontally within the column */
+            text-align: center; /* Center the content (image and text) inside the figure */
+        }
         ul {
-        list-style-type: none;
+            list-style-type: none;
+            clear: both;
+        }
+        h2 {
+            clear: both;
+        }
+        .figcaption-container:hover figcaption {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
         }
     </style>
 </head>
@@ -45,36 +72,81 @@
         <article>
             <h2> Pendidikan </h2>
             <ul>
-                <li> SMAN 3 Jakarta </li>
-                <li> ITS </li>
+                <li>
+                    <div class="figure-group">
+                        <figure class="pendidikan-figure">
+                            <img src="sma3.png" width="300" alt="sma3 Image">
+                            <figure class="figcaption-container">
+                                <figcaption><a href="https://www.instagram.com/sman3jakarta_official/" target="_blank" style="color: rgba(255, 255, 255, 0.866);">SMAN 3 Jakarta</a></figcaption>
+                            </figure>
+                        </figure>
+                        <figure class="pendidikan-figure">
+                            <img src="its.png" width="300" alt="sma3 Image">
+                            <figure class="figcaption-container">
+                                <figcaption><a href="https://www.instagram.com/its_campus/" target="_blank" style="color: rgba(255, 255, 255, 0.866);">Institut Teknologi Sepuluh Nopember</a></figcaption>
+                            </figure>
+                        </figure>
+                    </div>
+                </li>
             </ul>
             <h2> Achievements</h2>
-            <figure>
-                <img src="slam.png" width="300" alt="Slam Image">
-                <figcaption><a href="https://www.instagram.com/slamfest_teladan/" target="_blank" style="color: rgba(255, 255, 255, 0.866);">MC of Slamfest</a></figcaption>
-            </figure>
-            <figure>
-                <img src="orphan.png" width="300" alt="Orphan Image">
-                <figcaption> <a href="https://www.instagram.com/p/BwatxlcDBx_/?img_index=7" target="_blank" style="color: rgba(255, 255, 255, 0.866);">Head Organizer of orphanage crowd funding</a></figcaption>
-            </figure>
-            <figure>
-                <img src="smun.png" width="300" alt="SMUN Image">
-                <figcaption> <a href="https://www.instagram.com/p/CtNlxEwypuW/" target="_blank" style="color: rgba(255, 255, 255, 0.866)">ITS MUN International Delegate (SMUN)</a></figcaption>
-            </figure>
+            <ul>
+                <li>
+                    <div class="figure-group">
+                        <figure class="achievments-figure">
+                            <img src="slam.png" width="300" alt="its Image">
+                            <figure class="figcaption-container">
+                                <figcaption><a href="https://www.instagram.com/slamfest_teladan/" target="_blank" style="color: rgba(255, 255, 255, 0.866);">MC of Slamfest</a></figcaption>
+                            </figure>
+                        </figure>
+                        <figure class="achievments-figure">
+                            <img src="orphan.png" width="300" alt="Orphan Image">
+                            <figure class="figcaption-container">
+                                <figcaption> <a href="https://www.instagram.com/p/BwatxlcDBx_/?img_index=7" target="_blank" style="color: rgba(255, 255, 255, 0.866);">Head Organizer of orphanage crowd funding</a></figcaption>
+                            </figure>
+                        </figure>
+                        <figure class="achievments-figure">
+                            <img src="smun.png" width="300" alt="SMUN Image">
+                            <figure class="figcaption-container">
+                                <figcaption> <a href="https://www.instagram.com/p/CtNlxEwypuW/" target="_blank" style="color: rgba(255, 255, 255, 0.866)">ITS MUN International Delegate (SMUN)</a></figcaption>
+                            </figure>
+                        </figure>
+                    </div>
+                </li>
+            </ul>
             <h2> Toolset </h2>
             <ul>
-                <li>python</li>
-                <li>java</li>
-                <li>linux</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>M.Word</li>
-                <li>M.Power point</li>
+                <li>
+                    <div class="figure-group">
+                        <figure class="toolset-figure">
+                            <img src="python.png" width="300" alt="sma3 Image">
+                        </figure>
+                        <figure class="toolset-figure">
+                            <img src="java.png" width="300" alt="sma3 Image">
+                        </figure>
+                        <figure class="toolset-figure">
+                            <img src="C.png" width="300" alt="sma3 Image">
+                        </figure>
+                        <figure class="toolset-figure">
+                            <img src="html.png" width="300" alt="sma3 Image">
+                        </figure>
+                        <figure class="toolset-figure">
+                            <img src="css.png" width="300" alt="sma3 Image">
+                        </figure>
+                        <figure class="toolset-figure">
+                            <img src="js.png" width="300" alt="sma3 Image">
+                        </figure>
+                        <figure class="toolset-figure">
+                            <img src="mword.png" width="300" alt="sma3 Image">
+                        </figure>
+                        <figure class="toolset-figure">
+                            <img src="pp.png" width="300" alt="sma3 Image">
+                        </figure>
+                    </div>
+                </li>
             </ul>
         </article>
     </main>
-    
     <footer>
     </footer>
 </body>
